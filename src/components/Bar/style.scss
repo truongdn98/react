@@ -1,0 +1,148 @@
+.select-product h6 {
+    color: #fff
+}
+
+.currentColor svg {
+    font-size: 50px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translatex(-50%)
+}
+
+.select-product {
+    height: 150px;
+    padding-top: 20px
+}
+
+.product-bar {
+    position: fixed !important;
+    bottom: 0;
+    background: #0d986a;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    z-index: 9999999
+}
+
+.product-bar-open {
+    bottom: -15px
+}
+
+.product-bar>button {
+    width: 50%;
+    border: th solid rgba(128, 124, 124, 0.39);
+    border-radius: 0px;
+    height: 40px;
+    padding-top: 10px;
+    font-weight: 700;
+    color: #fff
+}
+
+.product-bar>a {
+    width: 50%;
+    border: th solid rgba(128, 124, 124, 0.39);
+    border-radius: 0px;
+    text-decoration: none
+}
+
+.product-bar>a button {
+    width: 100%;
+    border: th solid rgba(128, 124, 124, 0.39);
+    border-radius: 0px;
+    height: 40px;
+    padding-top: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff !important
+}
+
+.currentColor:after {
+    position: absolute;
+    content: '';
+    height: 60px;
+    width: 60px;
+    background: rgb(255, 255, 255);
+    top: -25px;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 50px;
+    z-index: -1
+}
+
+.product-bar>a button svg,
+.product-bar>button svg {
+    margin-right: 5px;
+    margin-top: -5px;
+    color: #fff
+}
+
+.select-product {
+    background: #008d5b;
+    bottom: 40px;
+    border-radius: 350px 350px 0 0;
+    width: 100%;
+    height: 350px;
+    top: 70%;
+
+}
+
+
+.product-detail-page .cart-mb  {
+    position: fixed;
+    bottom: 140px;
+    right: 0px
+}
+.product-detail-page .cart-mb.cart-mb-open  {
+    bottom: 240px;
+}
+
+.product-detail-page .cart-mb-icon {
+    position: absolute;
+    top: 30px;
+    right: 19px;
+    z-index: 9999;
+    border-radius: 50px;
+    padding: 5px;
+    display: inline 
+        /*     animation: play 2s ease infinite; */
+
+}
+
+.circle1,
+.circle2 {
+    animation: scaling 2.5s infinite;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 21px;
+    top: 32px;
+
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale3d(1, 1, 1);
+        background-color: rgba(116, 149, 110, 0.29);
+    }
+
+    80% {
+        transform: scale3d(1.5, 1.5, 1);
+        background-color: rgba(41, 213, 97, 0.1);
+    }
+}
+
+.circle1 {
+    animation-delay: 0s;
+}
+
+.circle2 {
+    animation-delay: 1s;
+}
+
+.product-detail-page .cart-mb svg {
+    font-size: 35px;
+}

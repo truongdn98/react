@@ -1,0 +1,11 @@
+.btn-color {
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: red;
+}
+.MuiButtonBase-root,
+button:disabled {
+    color: rgb(0,0,0) 
+}

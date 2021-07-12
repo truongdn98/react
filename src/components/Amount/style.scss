@@ -1,0 +1,20 @@
+svg {
+    color:  #0d986a;
+    font-size: 20px;
+}
+
+.box{
+    background: #AAFFEF;
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+    & label {
+        margin: 2px 5px 0;
+    }
+    & input {
+        width: 30px;
+        border: 0;
+        background: transparent;
+        text-align: center
+    }
+}

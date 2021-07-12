@@ -1,0 +1,19 @@
+$main-color: #002140;
+$second-color: #0d986a;
+$third-color: #ff4141;
+
+#nav-bar {
+  & li {
+    & a {
+      padding-left: 0px;
+      color: $main-color;
+    }
+  }
+}
+// #nav-bar li a {
+//     padding-left: 0px;
+//     color: $main-color;
+// }
+#nav-bar .nav-link.is-active{
+  color: #0d986a ;
+}

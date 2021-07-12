@@ -1,0 +1,83 @@
+$main-color : #002140;
+$second-color: #0D986A;
+$third-color: #647584;
+.detail {
+    background-image: url('/assets/bgitem/bgdetail2.png') ;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    padding: 20px 20px; 
+    & .product-img img{
+        height: 320px;
+    }
+    & .product-info{
+        & .product-name{
+            font-size: 30px;
+            margin: 5px 0 20px
+        }
+        & .full{
+            
+        } 
+        & .product-detail{
+
+            & .product-catelog{
+                font-weight: 700;
+            }
+            & .product-star {
+                background: #fff;
+                padding: 5px 25px;
+                color:  $second-color;
+                border-radius: 15px;
+                & svg {
+                    margin-right: 10px;
+                    margin-top: -2px;
+                }
+            }
+            &.product-name {
+                font-size: 35px;
+                margin: 5px 0 10px
+            }
+        }  
+    }
+}
+
+.product-name{
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .detail {
+        background-image: url('/assets/bgitem/bgdetailmb.png') ; 
+        height: 260px;
+        border-radius: 0 0 70px
+    }
+}
+@media screen and (max-width: 576px) {
+    .product-img img {
+        position: absolute;
+        height: 280px !important;
+        right: 0px;
+        top: 150px;
+    }
+    .product-item {
+        width: 350px
+     }
+    
+     .full{
+         margin-top: 20px;
+     }
+        .detail {
+            background-image: url('/assets/bgitem/bgdetailmb.png') ; 
+            background-repeat: no-repeat;
+            background-size: cover !important;
+            height: 450px;
+            padding-top: 80px
+        }
+     
+}
+@media screen and (max-width: 400px) {
+    .detail {
+        background-size: contain !important;
+        height: 400px;
+    }
+}
+

@@ -1,0 +1,115 @@
+
+
+
+$main-color : #002140;
+$second-color: #0D986A;
+$third-color: #ff4141;
+
+.product-item:nth-child(3n+2) {
+    margin-top: 50px
+}
+.product-item {
+    // background: url('/assets/bgitem/bgitem.png')  no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // width: 33%;
+    
+        width: 350px;
+     
+    height: 170px;
+    position: relative;
+    padding: 20px 10px 0 15px;
+    margin: 0px 0px;
+    & a {
+        text-decoration: 0
+    }
+    & img {
+        position: absolute;
+        top: -40px;
+        right: 5%;
+        height: 180px;
+    }
+    &:hover .addcart{
+        color: $third-color;
+        transform: scale3d(1.1,1.1,1) translatex(10%);
+        transition: 1s
+    }
+    &:nth-child(5n+2){
+        background-image: url('/assets/bgitem/bgitem2.png') ;  
+    }
+    &:nth-child(5n+3){
+        background-image: url('/assets/bgitem/bgitem3.png') ;  
+    }
+    &:nth-child(5n+1){
+        background-image: url('/assets/bgitem/bgitem.png') ;  
+    }
+    &:nth-child(5n+4){
+        background-image: url('/assets/bgitem/bgitem4.png') ;  
+    }
+    &:nth-child(5n+5){
+        background-image: url('/assets/bgitem/bgitem5.png') ;  
+    }
+    & .product-name {
+        color: $main-color;
+        font-size: 22px;
+        margin-top: 5px;
+        padding: 0 0px 0 0;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .product-item {
+        height: 190px;
+        padding: 30px 50px 0 50px;
+        margin: 20px 0px;
+        background-position: 50% 50%;
+        & img {
+            top: -40px;
+            right: 2%;
+            height: 160px;
+        }
+        
+    }
+    .product-item:nth-child(3n+2) {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 468px) {
+    .product-item {
+        padding: 30px 50px 0 60px;
+        background-position: 35% 50%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .product-item {
+        padding: 30px 50px 0 40px   
+    }
+}
+
+.product-catelog {
+    color: $main-color;
+    text-transform: uppercase;
+    font-size: 12px
+}
+
+.product-price {
+    color:  $main-color;   
+}
+.bar{
+    position: absolute;
+    bottom: 25px;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 55%;
+    & .addcart{
+        font-size: 55px;
+        color: $second-color;
+        transition: 1s
+    }
+}
+
+.icon {
+    margin-bottom: 5px
+}

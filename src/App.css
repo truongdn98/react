@@ -1,0 +1,9 @@
+.layout{
+  display:flex 
+}
+#sidebar{
+  width: 20%
+}
+body{
+  margin-bottom: 502px !important;
+}

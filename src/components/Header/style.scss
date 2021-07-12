@@ -1,0 +1,37 @@
+.header__container {
+    display: flex;  
+    justify-content: space-between
+}
+img {
+    height: 100px
+}
+.header-menu {
+    list-style-type: none;
+    margin-top: 35px;
+    & li {
+        display: inline;
+        padding: 0 10px;
+    }
+        & a{
+            display: inline;
+            color: #000;
+        }
+        & .nav-link.is-active{
+            color: #0d986a ;
+          }
+          & .is-active{
+            position: relative
+        }
+        & .is-active:before {
+            content: '';
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background: rgb(253,255,0) ;
+            border-radius: 50px;
+            top: 15px;
+            left: 10%;
+            z-index: -1 
+        }
+}
+

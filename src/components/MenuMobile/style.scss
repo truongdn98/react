@@ -1,0 +1,47 @@
+
+.header-mobile {
+   padding: 10px 20px;
+   & img{
+    width: 180px;
+    height: 32px;
+    }
+    & .icon-bar{
+        float: right;
+        margin-top: -40px
+    } 
+    &  .icon-bar svg{
+        float: right;
+        
+    }
+}
+.fixed {
+    z-index: 1;
+    background: rgba(5,5,5,0.73)
+}
+.menu-mobile{
+    background: rgba(14,152,107,0.94) ;
+    top: 0px;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 999;
+    & .menu li {
+        display: block;
+        padding: 8px;
+        &   .menu li a{
+            color: #fff !important;
+             margin: 0 !important
+         }
+    }
+  
+   
+}  .menu-mobile .menu a{
+    color: #fff;
+     margin: 0 !important
+ }
+ .scrolling{
+    position: fixed;
+       background: rgb(255,255,255);
+       z-index: 99;
+       height: 50px
+   }

@@ -1,0 +1,106 @@
+.cart {
+    margin-top: 20px
+  }
+  :root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+ 
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  .show-cart{
+    display: none;
+    position: relative;
+    z-index: 9999;
+    & ul{
+      padding: 15px ;
+     margin: 0px 
+  } &:after{
+    content: '';
+   position: absolute;
+    width: 100px;
+    height: 20px;
+    top: -20px;
+    right: 0;
+}
+}
+.cart:hover .show-cart{
+  display: block;
+ position: absolute;
+ z-index: 2;
+ top: 50px;
+ right: 0px;
+ background: rgb(255,255,255);
+ width: 340px;
+ border-bottom: 3px solid #0d986a;
+ border-top: 1px solid #0d986a;
+
+}
+
+          .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+            border-bottom: 1px dashed rgba(0,0,0,0.31);
+            & .recent-image {
+              width: 3rem;
+              height: 3rem;
+              border-radius: 5rem;
+              flex-shrink: 0;
+              object-fit: cover;
+            }
+            & .product-info {
+              margin-left: 1rem;
+              text-align: left;
+            }
+            & .product-cartitem,
+            .cart-price{
+              display: block;
+              margin-bottom: 0rem;
+              color: #333;
+              font-weight: 600;
+            }
+            & .cart-price{
+              font-size: 15px;
+            }
+          }
+         
+          
+          
+          .recent-position,
+          .cart-quantity {
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+          }
+          .recent-meta {
+            margin-left: auto;
+            text-align: right 
+          }
+      
+        .no-order img{
+    margin: 0 auto; 
+  }
+        .no-order span{
+          font-size: 16px
+      }
